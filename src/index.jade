@@ -56,7 +56,7 @@ html
             }
 
       section
-        h2 Javascript is great but has it's issues as well
+        h2 Javascript is great but it has issues as well
 
       section
         h2 So... how we can make JS better and preserve what's best in it?
@@ -85,11 +85,72 @@ html
           li Be "cheap" to use
 
       section
-        h2 CoffeeScript fits them all!
+        h2 CoffeeScript
+
+      section
+        code.language-coffeescript
+          pre.
+            date = if friday then sue else jill
+
+            # Eat lunch.
+            eat = (what) -> "om nom noming \#{what}"
+            eat food for food in ['toast', 'cheese', 'wine']
+
+            class Animal
+              constructor: (@name) ->
+              move: (meters) -> 
+                alert @name + " moved \#{meters}m."
+
+            new Animal('dog').move 3
+
+      section
+        h2 Other languages confusion
+
+        ul 
+          li Why I can't [...]
+          li Why do I need [...]
+
+      section
+        h2 CoffeeScript
+        h2 "It's just JavaScript"
+
+      section
+        h2 &#10003; Preserve JS awsomeness
+        h2 Fix as much JS issues as possible
+        h2 Be "cheap" to use
+
+      section
+        h2 CoffeeScript fixes things
+
+        ul
+          li 
+            | ===
+          li better switch
+          li function binding
+          li for-in, for-of
+
+      section
+        h2 CoffeeScript can offer you a lot
+
+        ul
+          li handy literals @, ->, =>
+          li splats
+          li classes
+          li function default arguments
+          li destructuring assignment
+          li ranges
+
+      section
+        h2 Cool story bro...
+
+      section
+        h2 More expressions
+        h3 it's something is worth trying
 
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
     script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.min.js')
     script(src='bower_components/bespoke-hash/dist/bespoke-hash.min.js')
     script(src='bower_components/bespoke-state/dist/bespoke-state.min.js')
     script(src='bower_components/prism/prism.js')
+    script(src='bower_components/prism/components/prism-coffeescript.js')
     script(src='scripts/main.js')
