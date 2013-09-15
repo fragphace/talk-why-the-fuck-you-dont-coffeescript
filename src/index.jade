@@ -6,9 +6,10 @@ html
         title Why the fuck you don't CoffeeScript?
 
         //- Check out 'src/bower_components/prism/' for available themes
-        link(rel='stylesheet', type='text/css', href='bower_components/prism/prism-tomorrow.css')
-
+        link(rel='stylesheet', type='text/css', href='bower_components/prism/prism-twilight.css')
         link(rel='stylesheet', type='text/css', href='styles/main.css')
+        link(href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|The+Girl+Next+Door|Lora:400,700,400italic,700italic|Raleway:400,600,900', 
+            rel='stylesheet', type='text/css')
 
     body
 
@@ -17,29 +18,36 @@ html
             section
 
             section
+                h2 Who likes JavaScript?
+                h3 Rise your hand, please!
+
+            section
                 code.language-javascript
                     pre.
                         Array.prototype.slice.call(arguments, 0);
 
             section
-                h2 Javascript is the only language that runs on browser and has some AMAZING features
-                h3 It's one of the uglies languages as well
+                h1 JavaScript is GREAT
+                h2 Runs on browser 
+                h2 AMAZING features
+                h2 One of the ugliest
 
             section
                 h2 How we can make JS better?
-                h3 And preserve what's best in it
+                h3 And preserve what's best of it
 
             section
                 h2 ECMAScript Harmony
-                h3 We have to wait for it...
+                h3 We have to wait for it though
 
             section
-                h2 Get compiler!
+                h2 Get yourself a compiler!
                 h3 It's faster that way
             
             section
+                h1 If it's good it should:
                 h2 Preserve JS awsomeness
-                h2 Fix as much JS issues as possible
+                h2 Fix JS design flaws
                 h2 Be "cheap" to use
 
             section
@@ -64,29 +72,31 @@ html
             section
                 h2 Other languages confusion
 
-                ul 
-                    li Why I can't [...]
-                    li Why do I need [...]
+                h3 Why I can't [...]
+                h3 Why do I need [...]
 
             section
-                h2 CoffeeScript
                 h2 "It's just JavaScript"
 
             section
                 h2 &#10003; Preserve JS awsomeness
-                h2 Fix as much JS issues as possible
+                h2 Fix JS design flaws
                 h2 Be "cheap" to use
 
             section
-                h2 CoffeeScript can offer you a lot
+                h2 CoffeeScript has much to offer
 
                 h3 
-                    | no more ===, better switch, function binding, for-in, for-of
-                    | handy literals (@, ->, =>), splats, classes, default arguments, 
-                    | destructuring assignment, ranges, ...
+                    | better switch, function binding,
+                    br
+                    | for-in, for-of, handy literals (@, ->, =>), 
+                    br
+                    | splats, classes, default arguments,
+                    br 
+                    | destructuring assignment, ranges
 
             section
-                h2 Too much to show
+                h2 To many to show
                 h3 I'll just pick the most important feature
 
             section
@@ -94,7 +104,6 @@ html
                 h3 it's something worth fighting for
 
             section 
-                h2 Non-expressions are the ugly bits
                 code.language-javascript
                     pre.
                         a = 2;
@@ -112,13 +121,6 @@ html
             section
                 code.language-coffeescript
                     pre.
-                        ... = if ... else ...
-                        ... = for ...
-                        ... = switch ...
-
-            section
-                code.language-coffeescript
-                    pre.
                         date = if friday then sue else jill
 
             section
@@ -132,8 +134,12 @@ html
                         foo = (a + 1 for a in [1, 2, 3, 4])
 
             section
+                h2 Expressions make your code shorter
+                h3 Shorter is better
+
+            section
                 h2 &#10003; Preserve JS awsomeness
-                h2 &#10003; Fix as much JS issues as possible
+                h2 &#10003; Fix JS design flaws
                 h2 Be "cheap" to use
 
             section
@@ -144,7 +150,9 @@ html
                 h2 CoffeeScript has flaws
 
             section
-                h2 CoffeeScript's variable scope is different than in JavaScript
+                h2 CoffeeScript's variable scope 
+                    br
+                    | is different than in JavaScript
                 h3 and it isn't good
 
             section
@@ -157,21 +165,19 @@ html
                 h3 Just add new config section to your Gruntfile
 
             section
-                h2
-                    a(href="http://fragphace.pl/blog/2013-08-24-Clean-simple-frontend-setup-for-CoffeeScript")
-                        | http://fragphace.pl/blog/2013-08-24-Clean-simple-frontend-setup-for-CoffeeScript
+                h2 Clean and simple front-end project setup 
+                h3 http://fragphace.pl
 
             section
-                h2 In IT it's all about trading things
-
-            section
-                h2 CoffeeScript!
+                h1 CoffeeScript!
                 h2 &#10003; Preserves JS awsomeness
-                h2 &#10003; Fixes as much JS issues as possible
+                h2 &#10003; Fix JS design flaws
                 h2 &#10003; Is "cheap" to use
 
             section
-                h1 Why the fuck you don't CoffeeScript?
+                h1 Why the fuck you
+                    br
+                    |  don't CoffeeScript?
                 h2 @fragphace
 
         script(src='bower_components/bespoke.js/dist/bespoke.min.js')
