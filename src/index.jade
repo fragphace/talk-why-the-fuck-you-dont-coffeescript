@@ -25,9 +25,6 @@ html
             section
                 ul
                     li
-                        h2 It runs EVERYWHERE
-
-                    li
                         h2 The only language that runs on browser
 
                     li
@@ -42,26 +39,10 @@ html
                         Array.prototype.slice.call(arguments, 0);
 
             section
-                code.language-javascript
-                    pre.
-                        {} + {} // NaN
-
-            section
-                code.language-javascript
-                    pre.
-                        return
-                        {
-                            foo: 'bar'
-                        }
-
-            section
                 h2 Javascript is great but it has issues as well
 
             section
                 h2 So... how we can make JS better and preserve what's best in it?
-
-            section
-                h2 It's already happening!
 
             section
                 h2 ECMAScript Harmony
@@ -76,15 +57,15 @@ html
 
             section
                 h2 Here's an idea!
-                p
-                    | Let's create a new language that compiles to JavaScript. It must:
-                ul
-                    li Preserve JS awsomeness
-                    li Fix as much JS issues as possible
-                    li Be "cheap" to use
+                h3 Let's create a new language that compiles to JavaScript
+            
+            section
+                h2 Preserve JS awsomeness
+                h2 Fix as much JS issues as possible
+                h2 Be "cheap" to use
 
             section
-                h2 CoffeeScript
+                h2 CoffeeScript!
 
             section
                 code.language-coffeescript
@@ -121,18 +102,10 @@ html
             section
                 h2 CoffeeScript can offer you a lot
 
-                ul
-                    li 
-                        |  no ===
-                    li better switch
-                    li function binding
-                    li for-in, for-of
-                    li handy literals @, ->, =>
-                    li splats
-                    li classes
-                    li function default arguments
-                    li destructuring assignment
-                    li ranges
+                h3 
+                    | no more ===, better switch, function binding, for-in, for-of
+                    | handy literals (@, ->, =>), splats, classes, default arguments, 
+                    | destructuring assignment, ranges, ...
 
             section
                 h2 Cool story bro...
@@ -142,7 +115,7 @@ html
                 h3 it's something worth trying
 
             section 
-                h2 Expressions
+                h2 Expression is
                 code.language-javascript
                     pre.
                         addTwo = function (x) { return x + 2; };
@@ -150,7 +123,7 @@ html
                         isFour = a === 4;
 
             section
-                h2 Non-expressions
+                h2 Non-expression is
                 code.language-javascript
                     pre.
                         a = 2;
@@ -163,7 +136,11 @@ html
                         }
 
             section
-                h2 In CoffeeScript you have more expressions
+                h2 Expressions are like mayo
+                h3 They are good for you
+
+            section
+                h2 CoffeeScript!
 
             section
                 code.language-coffeescript
@@ -196,17 +173,13 @@ html
                 h2 CoffeeScript has it's own issues
 
             section
-                h2 JavaScript
-                code.language-javascript
+                h2 CoffeeScript
+                code.language-coffeescript
                     pre.
-                        var a = 1
-                        var foo = function () {
-                            var a = 2;
-                        };
-                        foo();
-                        console.log(a); // 1
+                        a = 1
+                        foo = -> a = 2
 
-            section
+                br
                 h2 JavaScript
                 code.language-javascript
                     pre.
@@ -214,64 +187,31 @@ html
                         var foo = function () {
                             a = 2;
                         };
-                        foo();
-                        console.log(a); // 2
-
-            section
-                h2 Python
-                code.language-python
-                    pre.
-                        a = 1
-                        def foo():
-                            a = 2
-                        foo()
-                        print(a) # 1
-
-            section
-                h2 Python
-                code.language-python
-                    pre.
-                        a = 1
-                        def foo():
-                            global a
-                            a = 2
-                        foo()
-                        print(a) # 2
-
-            section
-                h2 CoffeeScript
-                code.language-coffeescript
-                    pre.
-                        a = 1
-                        foo = -> a = 2
-                        foo()
-                        console.log a # 2
 
             section
                 h2 CoffeeScript's variable scope isn't the best 
-
                 h3 ...and it's not going to change
 
             section
-                h2 Then CoffeeScripting you need to pay more attention to details
+                h2 When CoffeeScripting you need to pay more attention to details
 
-            section
+            section                
                 code.language-coffeescript
                     pre.
                         assertEquals foo a + 1, b, 3
 
             section
-                code.language-coffeescript
-                    pre.
-                        assertEquals foo(a + 1, b), 3
-
-            section
                 h2 CoffeeScript compiles 
-                h3 The compilation is a problem itself
+                h3 The compilation itself is a problem
 
             section
-                h2 But you already deal with (most probably)
+                h2 Whose line is it anyway?
+                h3 Duh, use source maps
+
+            section
+                h2 You already know how to deal with compilation
                 h3 Just add new config section to your Gruntfile
+
 
             section
                 h2
@@ -282,7 +222,7 @@ html
                 h2 In IT it's all about trading things
 
             section
-                h2 CoffeeScript is a very good trade
+                h2 CoffeeScript!
                 h2 &#10003; Preserves JS awsomeness
                 h2 &#10003; Fixes as much JS issues as possible
                 h2 &#10003; Is "cheap" to use
