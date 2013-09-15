@@ -120,19 +120,14 @@ html
         h2 Be "cheap" to use
 
       section
-        h2 CoffeeScript fixes things
-
-        ul
-          li 
-            | ===
-          li better switch
-          li function binding
-          li for-in, for-of
-
-      section
         h2 CoffeeScript can offer you a lot
 
         ul
+          li 
+            |  no ===
+          li better switch
+          li function binding
+          li for-in, for-of
           li handy literals @, ->, =>
           li splats
           li classes
@@ -145,7 +140,58 @@ html
 
       section
         h2 More expressions
-        h3 it's something is worth trying
+        h3 it's something worth trying
+
+      section 
+        h2 Expressions
+        code.language-javascript
+          pre.
+            addTwo = function (x) { return x + 2; };
+            a = addTwo(2);
+            isFour = a === 4;
+
+      section
+        h2 Non-expressions
+        code.language-javascript
+          pre.
+            a = 2;
+            if (a === 2) {
+              a + 2;
+            } else if (a < 0) {
+              a + 3;
+            } else {
+              a + 4;
+            }
+
+      section
+        h2 In CoffeeScript you have more expressions
+
+      section
+        code.language-coffeescript
+          pre.
+            ... = if ... else ...
+            ... = for ...
+            ... = switch ...
+
+      section
+        code.language-coffeescript
+          pre.
+            date = if friday then sue else jill
+
+      section
+        code.language-coffeescript
+          pre.
+            console.log(a) for a in [1, 2, 3, 4]
+
+      section
+        code.language-coffeescript
+          pre.
+            foo = (a + 1 for a in [1, 2, 3, 4])
+
+      section
+        h2 &#10003; Preserve JS awsomeness
+        h2 &#10003; Fix as much JS issues as possible
+        h2 Be "cheap" to use
 
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
     script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.min.js')
