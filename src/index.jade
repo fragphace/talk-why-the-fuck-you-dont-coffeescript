@@ -1,202 +1,301 @@
 !!! 5
 html
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    title Why the fuck you don't CoffeeScript?
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        title Why the fuck you don't CoffeeScript?
 
-    //- Check out 'src/bower_components/prism/' for available themes
-    link(rel='stylesheet', type='text/css', href='bower_components/prism/prism-tomorrow.css')
+        //- Check out 'src/bower_components/prism/' for available themes
+        link(rel='stylesheet', type='text/css', href='bower_components/prism/prism-tomorrow.css')
 
-    link(rel='stylesheet', type='text/css', href='styles/main.css')
+        link(rel='stylesheet', type='text/css', href='styles/main.css')
 
-  body
+    body
 
-    article
+        article
 
-      section
-        h1 Why the fuck you don't CoffeeScript?
+            section
 
-      section
-        h2 Who likes JavaScript?
+            section
+                h2 Who likes JavaScript?
 
-      section
-        h2 WHY?
+            section
+                h2 WHY?
 
-      section
-        ul
-          li
-            h2 It runs EVERYWHERE
+            section
+                ul
+                    li
+                        h2 It runs EVERYWHERE
 
-          li
-            h2 The only language that runs on browser
+                    li
+                        h2 The only language that runs on browser
 
-          li
-            h2 It has some AMAZING features
+                    li
+                        h2 It has some AMAZING features
 
-      section
-        h2 BUT...
+            section
+                h2 BUT...
 
-      section
-        code.language-javascript
-          pre.
-            Array.prototype.slice.call(arguments, 0);
+            section
+                code.language-javascript
+                    pre.
+                        Array.prototype.slice.call(arguments, 0);
 
-      section
-        code.language-javascript
-          pre.
-            {} + {} // NaN
+            section
+                code.language-javascript
+                    pre.
+                        {} + {} // NaN
 
-      section
-        code.language-javascript
-          pre.
-            return
-            {
-              foo: 'bar'
-            }
+            section
+                code.language-javascript
+                    pre.
+                        return
+                        {
+                            foo: 'bar'
+                        }
 
-      section
-        h2 Javascript is great but it has issues as well
+            section
+                h2 Javascript is great but it has issues as well
 
-      section
-        h2 So... how we can make JS better and preserve what's best in it?
+            section
+                h2 So... how we can make JS better and preserve what's best in it?
 
-      section
-        h2 It's already happening!
+            section
+                h2 It's already happening!
 
-      section
-        h2 ECMAScript Harmony
-        ul
-          li Lexical scoping
-          li Default function parameters
-          li Modules
-          li ...
+            section
+                h2 ECMAScript Harmony
+                ul
+                    li Lexical scoping
+                    li Default function parameters
+                    li Modules
+                    li ...
 
-      section
-        h2 We have to wait for it...
+            section
+                h2 We have to wait for it...
 
-      section
-        h2 Here's an idea!
-        p
-          | Let's create a new language that compiles to JavaScript. It must:
-        ul
-          li Preserve JS awsomeness
-          li Fix as much JS issues as possible
-          li Be "cheap" to use
+            section
+                h2 Here's an idea!
+                p
+                    | Let's create a new language that compiles to JavaScript. It must:
+                ul
+                    li Preserve JS awsomeness
+                    li Fix as much JS issues as possible
+                    li Be "cheap" to use
 
-      section
-        h2 CoffeeScript
+            section
+                h2 CoffeeScript
 
-      section
-        code.language-coffeescript
-          pre.
-            date = if friday then sue else jill
+            section
+                code.language-coffeescript
+                    pre.
+                        date = if friday then sue else jill
 
-            # Eat lunch.
-            eat = (what) -> "om nom noming \#{what}"
-            eat food for food in ['toast', 'cheese', 'wine']
+                        # Eat lunch.
+                        eat = (what) -> "om nom noming \#{what}"
+                        eat food for food in ['toast', 'cheese', 'wine']
 
-            class Animal
-              constructor: (@name) ->
-              move: (meters) -> 
-                alert @name + " moved \#{meters}m."
+                        class Animal
+                            constructor: (@name) ->
+                            move: (meters) -> 
+                                alert @name + " moved \#{meters}m."
 
-            new Animal('dog').move 3
+                        new Animal('dog').move 3
 
-      section
-        h2 Other languages confusion
+            section
+                h2 Other languages confusion
 
-        ul 
-          li Why I can't [...]
-          li Why do I need [...]
+                ul 
+                    li Why I can't [...]
+                    li Why do I need [...]
 
-      section
-        h2 CoffeeScript
-        h2 "It's just JavaScript"
+            section
+                h2 CoffeeScript
+                h2 "It's just JavaScript"
 
-      section
-        h2 &#10003; Preserve JS awsomeness
-        h2 Fix as much JS issues as possible
-        h2 Be "cheap" to use
+            section
+                h2 &#10003; Preserve JS awsomeness
+                h2 Fix as much JS issues as possible
+                h2 Be "cheap" to use
 
-      section
-        h2 CoffeeScript can offer you a lot
+            section
+                h2 CoffeeScript can offer you a lot
 
-        ul
-          li 
-            |  no ===
-          li better switch
-          li function binding
-          li for-in, for-of
-          li handy literals @, ->, =>
-          li splats
-          li classes
-          li function default arguments
-          li destructuring assignment
-          li ranges
+                ul
+                    li 
+                        |  no ===
+                    li better switch
+                    li function binding
+                    li for-in, for-of
+                    li handy literals @, ->, =>
+                    li splats
+                    li classes
+                    li function default arguments
+                    li destructuring assignment
+                    li ranges
 
-      section
-        h2 Cool story bro...
+            section
+                h2 Cool story bro...
 
-      section
-        h2 More expressions
-        h3 it's something worth trying
+            section
+                h2 More expressions
+                h3 it's something worth trying
 
-      section 
-        h2 Expressions
-        code.language-javascript
-          pre.
-            addTwo = function (x) { return x + 2; };
-            a = addTwo(2);
-            isFour = a === 4;
+            section 
+                h2 Expressions
+                code.language-javascript
+                    pre.
+                        addTwo = function (x) { return x + 2; };
+                        a = addTwo(2);
+                        isFour = a === 4;
 
-      section
-        h2 Non-expressions
-        code.language-javascript
-          pre.
-            a = 2;
-            if (a === 2) {
-              a + 2;
-            } else if (a < 0) {
-              a + 3;
-            } else {
-              a + 4;
-            }
+            section
+                h2 Non-expressions
+                code.language-javascript
+                    pre.
+                        a = 2;
+                        if (a === 2) {
+                            a + 2;
+                        } else if (a < 0) {
+                            a + 3;
+                        } else {
+                            a + 4;
+                        }
 
-      section
-        h2 In CoffeeScript you have more expressions
+            section
+                h2 In CoffeeScript you have more expressions
 
-      section
-        code.language-coffeescript
-          pre.
-            ... = if ... else ...
-            ... = for ...
-            ... = switch ...
+            section
+                code.language-coffeescript
+                    pre.
+                        ... = if ... else ...
+                        ... = for ...
+                        ... = switch ...
 
-      section
-        code.language-coffeescript
-          pre.
-            date = if friday then sue else jill
+            section
+                code.language-coffeescript
+                    pre.
+                        date = if friday then sue else jill
 
-      section
-        code.language-coffeescript
-          pre.
-            console.log(a) for a in [1, 2, 3, 4]
+            section
+                code.language-coffeescript
+                    pre.
+                        console.log(a) for a in [1, 2, 3, 4]
 
-      section
-        code.language-coffeescript
-          pre.
-            foo = (a + 1 for a in [1, 2, 3, 4])
+            section
+                code.language-coffeescript
+                    pre.
+                        foo = (a + 1 for a in [1, 2, 3, 4])
 
-      section
-        h2 &#10003; Preserve JS awsomeness
-        h2 &#10003; Fix as much JS issues as possible
-        h2 Be "cheap" to use
+            section
+                h2 &#10003; Preserve JS awsomeness
+                h2 &#10003; Fix as much JS issues as possible
+                h2 Be "cheap" to use
 
-    script(src='bower_components/bespoke.js/dist/bespoke.min.js')
-    script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.min.js')
-    script(src='bower_components/bespoke-hash/dist/bespoke-hash.min.js')
-    script(src='bower_components/bespoke-state/dist/bespoke-state.min.js')
-    script(src='bower_components/prism/prism.js')
-    script(src='bower_components/prism/components/prism-coffeescript.js')
-    script(src='scripts/main.js')
+            section
+                h2 CoffeeScript has it's own issues
+
+            section
+                h2 JavaScript
+                code.language-javascript
+                    pre.
+                        var a = 1
+                        var foo = function () {
+                            var a = 2;
+                        };
+                        foo();
+                        console.log(a); // 1
+
+            section
+                h2 JavaScript
+                code.language-javascript
+                    pre.
+                        var a = 1
+                        var foo = function () {
+                            a = 2;
+                        };
+                        foo();
+                        console.log(a); // 2
+
+            section
+                h2 Python
+                code.language-python
+                    pre.
+                        a = 1
+                        def foo():
+                            a = 2
+                        foo()
+                        print(a) # 1
+
+            section
+                h2 Python
+                code.language-python
+                    pre.
+                        a = 1
+                        def foo():
+                            global a
+                            a = 2
+                        foo()
+                        print(a) # 2
+
+            section
+                h2 CoffeeScript
+                code.language-coffeescript
+                    pre.
+                        a = 1
+                        foo = -> a = 2
+                        foo()
+                        console.log a # 2
+
+            section
+                h2 CoffeeScript's variable scope isn't the best 
+
+                h3 ...and it's not going to change
+
+            section
+                h2 Then CoffeeScripting you need to pay more attention to details
+
+            section
+                code.language-coffeescript
+                    pre.
+                        assertEquals foo a + 1, b, 3
+
+            section
+                code.language-coffeescript
+                    pre.
+                        assertEquals foo(a + 1, b), 3
+
+            section
+                h2 CoffeeScript compiles 
+                h3 The compilation is a problem itself
+
+            section
+                h2 But you already deal with (most probably)
+                h3 Just add new config section to your Gruntfile
+
+            section
+                h2
+                    a(href="http://fragphace.pl/blog/2013-08-24-Clean-simple-frontend-setup-for-CoffeeScript")
+                        | http://fragphace.pl/blog/2013-08-24-Clean-simple-frontend-setup-for-CoffeeScript
+
+            section
+                h2 In IT it's all about trading things
+
+            section
+                h2 CoffeeScript is a very good trade
+                h2 &#10003; Preserves JS awsomeness
+                h2 &#10003; Fixes as much JS issues as possible
+                h2 &#10003; Is "cheap" to use
+
+            section
+                h1 Why the fuck you don't CoffeeScript?
+                h2 @fragphace
+
+        script(src='bower_components/bespoke.js/dist/bespoke.min.js')
+        script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.min.js')
+        script(src='bower_components/bespoke-hash/dist/bespoke-hash.min.js')
+        script(src='bower_components/bespoke-state/dist/bespoke-state.min.js')
+        script(src='bower_components/prism/prism.js')
+        script(src='bower_components/prism/components/prism-coffeescript.js')
+        script(src='bower_components/prism/components/prism-python.js')
+        script(src='scripts/main.js')
