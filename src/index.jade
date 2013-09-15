@@ -17,47 +17,25 @@ html
             section
 
             section
-                h2 Who likes JavaScript?
-
-            section
-                h2 WHY?
-
-            section
-                ul
-                    li
-                        h2 The only language that runs on browser
-
-                    li
-                        h2 It has some AMAZING features
-
-            section
-                h2 BUT...
-
-            section
                 code.language-javascript
                     pre.
                         Array.prototype.slice.call(arguments, 0);
 
             section
-                h2 Javascript is great but it has issues as well
+                h2 Javascript is the only language that runs on browser and has some AMAZING features
+                h3 It's one of the uglies languages as well
 
             section
-                h2 So... how we can make JS better and preserve what's best in it?
+                h2 How we can make JS better?
+                h3 And preserve what's best in it
 
             section
                 h2 ECMAScript Harmony
-                ul
-                    li Lexical scoping
-                    li Default function parameters
-                    li Modules
-                    li ...
+                h3 We have to wait for it...
 
             section
-                h2 We have to wait for it...
-
-            section
-                h2 Here's an idea!
-                h3 Let's create a new language that compiles to JavaScript
+                h2 Get compiler!
+                h3 It's faster that way
             
             section
                 h2 Preserve JS awsomeness
@@ -108,22 +86,15 @@ html
                     | destructuring assignment, ranges, ...
 
             section
-                h2 Cool story bro...
+                h2 Too much to show
+                h3 I'll just pick the most important feature
 
             section
-                h2 More expressions
-                h3 it's something worth trying
+                h2 Expressions
+                h3 it's something worth fighting for
 
             section 
-                h2 Expression is
-                code.language-javascript
-                    pre.
-                        addTwo = function (x) { return x + 2; };
-                        a = addTwo(2);
-                        isFour = a === 4;
-
-            section
-                h2 Non-expression is
+                h2 Non-expressions are the ugly bits
                 code.language-javascript
                     pre.
                         a = 2;
@@ -134,10 +105,6 @@ html
                         } else {
                             a + 4;
                         }
-
-            section
-                h2 Expressions are like mayo
-                h3 They are good for you
 
             section
                 h2 CoffeeScript!
@@ -170,48 +137,24 @@ html
                 h2 Be "cheap" to use
 
             section
-                h2 CoffeeScript has it's own issues
+                h2 It takes a weekend to learn
+                h3 or less
 
             section
-                h2 CoffeeScript
-                code.language-coffeescript
-                    pre.
-                        a = 1
-                        foo = -> a = 2
-
-                br
-                h2 JavaScript
-                code.language-javascript
-                    pre.
-                        var a = 1
-                        var foo = function () {
-                            a = 2;
-                        };
+                h2 CoffeeScript has flaws
 
             section
-                h2 CoffeeScript's variable scope isn't the best 
-                h3 ...and it's not going to change
-
-            section
-                h2 When CoffeeScripting you need to pay more attention to details
-
-            section                
-                code.language-coffeescript
-                    pre.
-                        assertEquals foo a + 1, b, 3
+                h2 CoffeeScript's variable scope is different than in JavaScript
+                h3 and it isn't good
 
             section
                 h2 CoffeeScript compiles 
                 h3 The compilation itself is a problem
 
-            section
-                h2 Whose line is it anyway?
-                h3 Duh, use source maps
 
             section
-                h2 You already know how to deal with compilation
+                h2 But hey! You know how to compile
                 h3 Just add new config section to your Gruntfile
-
 
             section
                 h2
