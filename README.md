@@ -1,5 +1,7 @@
 # Why the fuck you don't CoffeeScript?
-> A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
+
+* [SLIDES](http://fragphace.github.io/talk-why-the-fuck-you-dont-coffeescript)
+* [VIDEO](https://www.youtube.com/watch?v=ZeVzqMJiXhs)
 
 ## View slides locally
 
